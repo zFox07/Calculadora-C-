@@ -1,0 +1,59 @@
+using System;
+
+namespace Calculadora
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Operações disponiveis:\n" +
+                "(1) Adição: \n" +
+                "(2) Subtração: \n" +
+                "(3) Multiplicação: \n" +
+                "(4) Divisão: ");
+            Console.WriteLine("Escreve o numero correspondente a operação que queres fazer: ");
+            int numero = int.Parse(Console.ReadLine());
+
+            if (numero == 1)
+            {
+                Console.WriteLine("Você escolheu a Adicão! \n" +
+                    "Escolha um numero para a operação: ");
+                int a = int.Parse(Console.ReadLine());
+                Console.WriteLine("Escolha outro numero para a operação: ");
+                int b = int.Parse(Console.ReadLine());
+                Console.WriteLine("O resultado da operação é: " + (a + b));
+            }
+            else if (numero == 2)
+
+            {
+                Console.WriteLine("Você escolheu a Subtração! \n" +
+                    "Escolha um numero para a operação: ");
+                int c = int.Parse(Console.ReadLine());
+                Console.WriteLine("Escolha outro numero para a operação: ");
+                int d = int.Parse(Console.ReadLine());
+                Console.WriteLine("O resultado da operação é: " + (c - d));
+            }
+            else if (numero == 3)
+            {
+                Console.WriteLine("Você escolheu a Multiplicação! \n" +
+                   "Escolha um numero para a operação: ");
+                int e = int.Parse(Console.ReadLine());
+                Console.WriteLine("Escolha outro numero para a operação: ");
+                int f = int.Parse(Console.ReadLine());
+                Console.WriteLine("O resultado da operação é: " + (e * f));
+            }
+            else if (numero == 4)
+            {
+                Console.WriteLine("Você escolheu a Divisão! \n" +
+                   "Escolha um numero para a operação: ");
+                int e = int.Parse(Console.ReadLine());
+                Console.WriteLine("Escolha outro numero para a operação: ");
+                int f = int.Parse(Console.ReadLine());
+                Console.WriteLine("O resultado da operação é: " + (e / f));
+            }
+
+            Console.ReadLine();
+        }
+    }
+}
+// Feito por Eduardo Fernandes
